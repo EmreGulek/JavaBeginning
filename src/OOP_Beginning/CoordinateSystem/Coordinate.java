@@ -1,6 +1,6 @@
-package OOP_Beginning.KoordinatSistemi;
+package OOP_Beginning.CoordinateSystem;
 
-public class Koordinat {
+public class Coordinate {
     public static void main(String[] args) {
         Point point1 = new Point();
 
