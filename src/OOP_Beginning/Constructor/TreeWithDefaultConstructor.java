@@ -5,7 +5,7 @@ public class TreeWithDefaultConstructor {
     String type;
     float height;
 
-    public TreeWithDefaultConstructor(){};
+    public TreeWithDefaultConstructor(){}
     // Bu yazmış olduğum default constructor. Bunu ben yazmazsam da
     // yine de derleyici tarafından Class dosyasına bir tane default constructor sağlanır.
 
