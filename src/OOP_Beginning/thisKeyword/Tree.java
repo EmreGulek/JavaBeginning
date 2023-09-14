@@ -63,7 +63,7 @@ public class Tree {
 
         System.out.println();
 
-        // Check if they point to the same object
+
         if (tree == grownTree)
             System.out.println("The same");
         else
