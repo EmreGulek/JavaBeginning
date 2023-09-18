@@ -18,19 +18,19 @@ package OOP_Beginning.Static;
       public static void staticMethod(){
           int result = staticVar*2;
           System.out.println(result);
-        //  int resultt = instanceVar+2;
-        // static bir metod static olmayan yani instance bir değişkene direkt olarak erişemez.
-      // Öncelikle Myclass myc = new Myclass(); şeklinde referans oluşturup
-      // myc.instanceVar şeklinde erişebilirdim.
+   //  int resultt = instanceVar+2; !HATA!
+   // static bir metod static olmayan yani instance bir değişkene direkt olarak erişemez.
+   // Öncelikle Myclass myc = new Myclass(); şeklinde referans oluşturup
+   // myc.instanceVar şeklinde erişebilirdim.
 
       }
 
         public static void main(String[] args) {
            Myclass object = new Myclass();
            object.instanceMethod();
-        // Sınıfımda yer alan static olmayan metoduma sınıfımın nesnesiyle erişebildim.
+    // Sınıfımda yer alan static olmayan metoduma sınıfımın nesnesiyle erişebildim.
            staticMethod();
-        // static metoduma direkt erişebildim.
+    // static metoduma direkt erişebildim.
         }
 
 }
