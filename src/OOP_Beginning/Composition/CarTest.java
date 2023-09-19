@@ -8,5 +8,8 @@ public class CarTest {
         car.acclerate(100);
         car.stop();
         car.turnOff();
+
+     //   Her bir bileşen, kendi davranışlarını ve özelliklerini yönetir
+     //  ve araç sınıfı bu bileşenleri bir araya getirerek bir araç oluşturur.
     }
 }
