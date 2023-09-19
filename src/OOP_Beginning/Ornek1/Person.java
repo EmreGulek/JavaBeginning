@@ -7,7 +7,7 @@ public class Person {
     String firstName;
     String lastName;
 
-    // Car of the person
+    // Composition of the person
     Car vehicle;
 
     public String getInfo(){

@@ -24,7 +24,7 @@ public class Test {
         zeynep.vehicle = mercedes;
         // Bu ikisi birlikte gerçekleşmeli.Çünkü iki-yönlü ilişki var.
 
-        /* Car sınıfımın mercedes referansı ,
+        /* Composition sınıfımın mercedes referansı ,
          car sınıfımdaki PERSON NESNESİ-TÜRÜNDEN  ÜRETİLEN OWNER DEĞİŞKENİNE
          PERSON NESNESİNİN REFERANSI OLAN ZEYNEP REFERANSINI EDİNDİ.
          */
@@ -37,7 +37,7 @@ public class Test {
 
         /*
         Not :
-        Person ve Car nesnelerinin referansları Heap'te ama -YANİ OWNER VE VEHİCLE HEAP'TE _
+        Person ve Composition nesnelerinin referansları Heap'te ama -YANİ OWNER VE VEHİCLE HEAP'TE _
         Test' in main metodunda oluşturulan referansları Stac'tedir. - AMA ZEYNEP VE MERCEDES STAC'TEDİR.
          */
     }

@@ -20,7 +20,7 @@ public class Car {
         speed = 0 ;
     }
     public String getInfo(){
-        String info = "Car info "+year+" "+make+" "+model+" . Distance : "+distance+" km. and travelling at "+speed+"kmph.";
+        String info = "Composition info "+year+" "+make+" "+model+" . Distance : "+distance+" km. and travelling at "+speed+"kmph.";
 
         if(owner != null){
             info+="and its owner is "+owner.firstName+" "+owner.lastName;
