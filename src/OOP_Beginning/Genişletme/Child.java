@@ -1,4 +1,4 @@
-package OOP_Beginning.xx;
+package OOP_Beginning.Genişletme;
 
 public class Child extends Parent {
 
@@ -8,6 +8,7 @@ public class Child extends Parent {
 
     public static void f(){
         System.out.println("f() in Child");
+
     }
 
     public void g() {

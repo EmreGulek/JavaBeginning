@@ -1,4 +1,4 @@
-package OOP_Beginning.xx;
+package OOP_Beginning.Genişletme;
 
 public class Parent {
     protected int i = 3;
