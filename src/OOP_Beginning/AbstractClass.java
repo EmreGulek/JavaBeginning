@@ -1,4 +1,4 @@
-package OOP_Beginning.AbstractClass;
+package OOP_Beginning;
 
 public abstract class AbstractClass {
     public void aMethod(){

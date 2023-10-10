@@ -1,4 +1,4 @@
-package OOP_Beginning.Example;
+package OOP_Beginning.Example1;
 
 public class VolksWagen extends Vehicle {
     // Kuruclar devralınamazlar.
