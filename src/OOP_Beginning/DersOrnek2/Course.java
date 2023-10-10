@@ -1,4 +1,4 @@
-package OOP_Beginning.Ornek2;
+package OOP_Beginning.DersOrnek2;
 import java.util.Date;
 public class Course {
     String code;

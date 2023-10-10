@@ -1,6 +1,4 @@
-package OOP_Beginning.Ornek1;
-
-import OOP_Beginning.Ornek1.Car;
+package OOP_Beginning.DersOrnek1;
 
 public class Person {
     String tckn;

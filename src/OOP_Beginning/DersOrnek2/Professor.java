@@ -1,4 +1,4 @@
-package OOP_Beginning.Ornek2;
+package OOP_Beginning.DersOrnek2;
 
 public class Professor {
     String no;

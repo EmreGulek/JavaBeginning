@@ -1,4 +1,4 @@
-package OOP_Beginning.Ornek1;
+package OOP_Beginning.DersOrnek1;
 
 public class Test {
     public static void main(String[] args) {
