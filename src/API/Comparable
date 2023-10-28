@@ -1,0 +1,21 @@
+package API;
+
+Comparable İnterface'i = Bu arayüz java nesnelerini sıralamakta kullanılır.
+
+   Nesneleri sıralanacak olan metotlar , bu arayüzü üst tip olarak kabul edip
+ üzerindeki tek metot olan compareTo() metoduna gerçekleştirme-implementasyon- sağlar.
+
+ Bir nesneyi  bir başka nesneyle karşılaştırarak sonucu bir tam sayı olarak döndürür: (Sayıların kullanımını kendi insiyatifime bağlı olarak değiştiredebilirim.)
+ * Eğer bu nesne diğer nesneden küçükse, negatif bir tam sayı döndürür.
+ * Eğer bu nesne diğer nesneye eşitse, 0 döndürür.
+ * Eğer bu nesne diğer nesneden büyükse, pozitif bir tam sayı döndürür.
+
+// Comparable Arayüzü :
+public interface Comparable
+{
+int compareTo(Object obj);
+}
+
+// Arayüzün kullanılacağı(implemente edileceği) class için :
+public class CLASSİSMİ implements Comparable<CLASSİSMİ> {
+

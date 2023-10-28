@@ -1,5 +1,5 @@
 package OOP_Beginning.Constructor;
-
+//          ** önemli **
 public class ConstructorOverloaded2 {
     String type;
     float height;

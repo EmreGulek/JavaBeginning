@@ -10,6 +10,22 @@ public abstract class UniversityStudents {
     double exam2;
     double exam3;
 
+
+    public UniversityStudents(String studentName, String studentLastName, int no, int courseNumber, double exam1 , double exam2,double exam3) {
+        this(studentName,studentLastName,no,courseNumber,exam1,exam2);
+        // İkinci constructor'ı çağırıp onun üzerinden işlem yapar.
+        // this ile çoklu constructor kullanımı yaptım. Böylece kod tekrarından kaçınmış oldum.
+
+        this.exam3 = exam3;
+    }
+
+    public UniversityStudents(String studentName, String studentLastName, int no, int courseNumber, double exam1 , double exam2) {
+       this(studentName,studentLastName,no,courseNumber,exam1);
+        // Birinci constructor'ı çağırıp onun üzerinden işlem yapar.
+        this.exam2=exam2;
+
+    }
+
     public UniversityStudents(String studentName , String studentLastName, int no , int courseNumber,double exam1){
         this.no = no;
         this.studentName= studentName;
@@ -18,26 +34,8 @@ public abstract class UniversityStudents {
         this.exam1 = exam1;
     }
 
-    public UniversityStudents(String studentName, String studentLastName, int no, int courseNumber, double exam1 , double exam2) {
-        this.studentName= studentName;
-        this.studentLastName=studentLastName;
-        this.no=no;
-        this.courseNumber=courseNumber;
-        this.exam1 = exam1;
-        this.exam2=exam2;
-    }
-
-    public UniversityStudents(String studentName, String studentLastName, int no, int courseNumber, double exam1 , double exam2,double exam3) {
-        this.studentName= studentName;
-        this.studentLastName=studentLastName;
-        this.no=no;
-        this.courseNumber=courseNumber;
-        this.exam1 = exam1;
-        this.exam2=exam2;
-        this.exam3 = exam3;
-    }
-
-    protected void agnoCalculation (){ }
+    protected  abstract void agnoCalculation ();
+    // Bu sınıfı soyut bir sınıf yaptım . Çünkü tüm subclass'lar bu metodu override ediyor.
 
     }
 
