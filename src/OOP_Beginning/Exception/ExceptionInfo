@@ -1,0 +1,68 @@
+Exception fırlatma ihtimali olan kod parçası try bloğunda bulunur.
+Fırlatılan nesnenin tipine uygun argümana sahip catch bloğu ise hemen ardından gelir.
+
+Eğer try bloğu varsa
+        ya en az 1 tane catch bloğu
+        ya da finally bloğu
+        ya da daha fazla catch bloğu ile bir tane finallu bloğu olmalıdır.
+
+ Eğer kod try bloğuna girerse ve sıra dışı durum oluşursa ,
+akış var olan catch bloklarından bir tanesine dallanır.
+ Eğer kod try bloğuna girerse , sıra dışı durum oluşmazsa akış catch bloğuna girmez,
+normal çalışma , catch bloğu ya da bloklarından sonraki cümle ya da blok ile devam eder.
+
+** Her bir catch farklı tipte sıra dışı durum argümanı almalıdır.
+
+* catch bloğu argüman olarak Exception nesnesi alan bir metot gibi düşünülebilir.
+ try{ //İçerisinde exception oluşturabilecek olan catchler var.
+    catch(Type1 id1){
+   // Handle exception of Type1 => Tip1 sıra dışı durumu yakalandı.
+   }
+   catch(Type1 id1){
+      // Handle exception of Type2 => Tip2 sıra dışı durumu yakalandı.
+   }
+   catch(Type1 id1){
+      // Handle exception of Type3 => Tip3 sıra dışı durumu yakalandı.
+   }
+}
+
+ throw ingilizce de atmak,fırlatmak anlamına gelir.Bu sözcük java da hata fırlatmak anlamında kullanılır.
+throw bir metot ya da kod bloğu ile kullanılabilir.
+Checked ve unchecked olarak gruplandırılan her iki türdeki exceptionlar da yazılımcı tarafından throw edilebilir.
+
+throw, genellikle belirli bir program veya uygulamaya özel istisnalar oluşturmak için kullanılır.
+Programa, beklenenden farklı bir data girildiğinde, otomatik bir şekilde hata fırlatmak mümkün hale gelir.
+
+"throw" ve "throws" Java'da farklı amaçlara hizmet eden iki farklı anahtar kelimedir. İşlevleri ve kullanımları farklıdır:
+
+1. `throw` Anahtar Kelimesi:
+   - "throw" anahtar kelimesi, bir istisna (exception) nesnesini oluşturarak ve fırlatarak kullanılır.
+   - Programın belirli bir noktasında hata veya özel bir durum meydana geldiğinde, "throw" kullanarak bu hatanın bir istisna nesnesi ile temsil edilmesi sağlanır. Örneğin: `throw new Exception("Bir hata meydana geldi.")`
+   - "throw" ifadesi genellikle bir "try-catch" bloğu içinde kullanılır ve programın çalışmasını durdurarak hatayı işaret eder.
+
+2. `throws` Anahtar Kelimesi:
+   - "throws" anahtar kelimesi, bir metodun başlığı (signature) içinde kullanılır ve bu metodun çağrıldığında fırlatabileceği istisnaları belirtir.
+   - "throws" ifadesi, programcıya bu metodun çağrıldığında hangi istisnaların ortaya çıkabileceği konusunda bilgi verir. Örneğin: `public void metodAdi() throws IOException`
+   - "throws" ifadesi, bir metodun içinde istisna oluşturmak için kullanılmaz, sadece bu metodun kullanımını çevreleyen kodun, ilgili istisnaları ele almasını veya bunları başka yere iletip işlemesini sağlar.
+
+Özetle, "throw" istisnaları programın belirli bir noktasında fırlatmak ve işlemek için kullanılırken, "throws" ise bir metodun çağrıldığında hangi istisnaların ortaya çıkabileceğini tanımlamak için kullanılır ve bu istisnaları işlemekten sorumlu olan kodu bilgilendirir.
+
+public class ThrowsOrnegi2 {
+    public static void main(String[] args) {
+        try {
+            double sonuc = bolmeIslemi(10, 0);
+            System.out.println("Sonuç: " + sonuc);
+        } catch (ArithmeticException e) {
+            System.err.println("Hata yakalandı: " + e.getMessage());
+        }
+    }
+
+    public static double bolmeIslemi(int pay, int payda) throws ArithmeticException {
+        if (payda == 0) {
+            throw new ArithmeticException("Payda sıfır olamaz");
+        }
+        return (double) pay / payda;
+    }
+}
+
+
